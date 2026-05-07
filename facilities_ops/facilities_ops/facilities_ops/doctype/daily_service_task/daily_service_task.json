@@ -1,0 +1,184 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "is_submittable": 1,
+ "field_order": [
+  "naming_series",
+  "daily_service_plan",
+  "plan_date",
+  "client_site",
+  "service_type",
+  "shift_template",
+  "assigned_employee",
+  "status",
+  "section_execution",
+  "actual_start_time",
+  "actual_end_time",
+  "actual_duration_hours",
+  "section_checklist",
+  "checklist_responses",
+  "section_completion",
+  "completion_notes",
+  "completion_photo",
+  "supervisor_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DST-.YYYY.-.#####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "daily_service_plan",
+   "fieldtype": "Link",
+   "label": "Daily Service Plan",
+   "options": "Daily Service Plan",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "plan_date",
+   "fieldtype": "Date",
+   "label": "Plan Date",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "client_site",
+   "fieldtype": "Link",
+   "label": "Client Site",
+   "options": "Client Site",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": "Service Type",
+   "options": "Service Type",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "shift_template",
+   "fieldtype": "Link",
+   "label": "Shift Template",
+   "options": "Shift Template"
+  },
+  {
+   "fieldname": "assigned_employee",
+   "fieldtype": "Link",
+   "label": "Assigned Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nIn Progress\nCompleted\nMissed\nCancelled",
+   "default": "Pending",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_execution",
+   "fieldtype": "Section Break",
+   "label": "Execution Details"
+  },
+  {
+   "fieldname": "actual_start_time",
+   "fieldtype": "Datetime",
+   "label": "Actual Start Time"
+  },
+  {
+   "fieldname": "actual_end_time",
+   "fieldtype": "Datetime",
+   "label": "Actual End Time"
+  },
+  {
+   "fieldname": "actual_duration_hours",
+   "fieldtype": "Float",
+   "label": "Actual Duration (Hours)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_checklist",
+   "fieldtype": "Section Break",
+   "label": "Checklist Responses"
+  },
+  {
+   "fieldname": "checklist_responses",
+   "fieldtype": "Table",
+   "label": "Checklist Responses",
+   "options": "Daily Service Task Checklist Response"
+  },
+  {
+   "fieldname": "section_completion",
+   "fieldtype": "Section Break",
+   "label": "Completion"
+  },
+  {
+   "fieldname": "completion_notes",
+   "fieldtype": "Small Text",
+   "label": "Completion Notes"
+  },
+  {
+   "fieldname": "completion_photo",
+   "fieldtype": "Attach Image",
+   "label": "Completion Photo"
+  },
+  {
+   "fieldname": "supervisor_remarks",
+   "fieldtype": "Small Text",
+   "label": "Supervisor Remarks"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "Daily Service Task",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "role": "Operations Manager"
+  },
+  {
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "role": "Site Supervisor"
+  },
+  {
+   "read": 1,
+   "write": 1,
+   "role": "Operations Planner"
+  }
+ ],
+ "sort_field": "plan_date",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,215 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "is_submittable": 1,
+ "field_order": [
+  "naming_series",
+  "trip_request",
+  "vehicle",
+  "driver",
+  "trip_date",
+  "status",
+  "section_odometer",
+  "odometer_start",
+  "odometer_end",
+  "total_km",
+  "section_times",
+  "actual_departure",
+  "actual_return",
+  "trip_duration_hours",
+  "section_passengers",
+  "passengers",
+  "section_fuel",
+  "fuel_consumed",
+  "fuel_cost",
+  "section_notes",
+  "trip_notes",
+  "incident_report"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TS-.YYYY.-.#####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "trip_request",
+   "fieldtype": "Link",
+   "label": "Trip Request",
+   "options": "Trip Request",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Fleet Vehicle",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "trip_date",
+   "fieldtype": "Date",
+   "label": "Trip Date",
+   "reqd": 1,
+   "in_list_view": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nIn Progress\nCompleted\nCancelled",
+   "default": "Draft",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_odometer",
+   "fieldtype": "Section Break",
+   "label": "Odometer"
+  },
+  {
+   "fieldname": "odometer_start",
+   "fieldtype": "Float",
+   "label": "Odometer Start (km)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odometer_end",
+   "fieldtype": "Float",
+   "label": "Odometer End (km)"
+  },
+  {
+   "fieldname": "total_km",
+   "fieldtype": "Float",
+   "label": "Total KM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_times",
+   "fieldtype": "Section Break",
+   "label": "Actual Times"
+  },
+  {
+   "fieldname": "actual_departure",
+   "fieldtype": "Datetime",
+   "label": "Actual Departure"
+  },
+  {
+   "fieldname": "actual_return",
+   "fieldtype": "Datetime",
+   "label": "Actual Return"
+  },
+  {
+   "fieldname": "trip_duration_hours",
+   "fieldtype": "Float",
+   "label": "Trip Duration (Hours)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_passengers",
+   "fieldtype": "Section Break",
+   "label": "Passengers"
+  },
+  {
+   "fieldname": "passengers",
+   "fieldtype": "Small Text",
+   "label": "Passenger Names"
+  },
+  {
+   "fieldname": "section_fuel",
+   "fieldtype": "Section Break",
+   "label": "Fuel"
+  },
+  {
+   "fieldname": "fuel_consumed",
+   "fieldtype": "Float",
+   "label": "Fuel Consumed (Litres)"
+  },
+  {
+   "fieldname": "fuel_cost",
+   "fieldtype": "Currency",
+   "label": "Fuel Cost"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "trip_notes",
+   "fieldtype": "Small Text",
+   "label": "Trip Notes"
+  },
+  {
+   "fieldname": "incident_report",
+   "fieldtype": "Text Editor",
+   "label": "Incident Report"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "Trip Sheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "role": "Transport Coordinator"
+  },
+  {
+   "read": 1,
+   "write": 1,
+   "role": "Driver"
+  }
+ ],
+ "sort_field": "trip_date",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
