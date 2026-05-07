@@ -1,0 +1,8 @@
+[
+ {"doctype": "Workflow Action Master", "name": "Submit", "workflow_action_name": "Submit"},
+ {"doctype": "Workflow Action Master", "name": "Approve", "workflow_action_name": "Approve"},
+ {"doctype": "Workflow Action Master", "name": "Reject", "workflow_action_name": "Reject"},
+ {"doctype": "Workflow Action Master", "name": "Cancel", "workflow_action_name": "Cancel"},
+ {"doctype": "Workflow Action Master", "name": "Complete", "workflow_action_name": "Complete"},
+ {"doctype": "Workflow Action Master", "name": "Review", "workflow_action_name": "Review"}
+]

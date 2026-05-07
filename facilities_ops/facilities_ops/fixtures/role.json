@@ -1,0 +1,9 @@
+[
+ {"doctype": "Role", "name": "Operations Manager", "role_name": "Operations Manager", "desk_access": 1},
+ {"doctype": "Role", "name": "Operations Planner", "role_name": "Operations Planner", "desk_access": 1},
+ {"doctype": "Role", "name": "Site Supervisor", "role_name": "Site Supervisor", "desk_access": 1},
+ {"doctype": "Role", "name": "Transport Coordinator", "role_name": "Transport Coordinator", "desk_access": 1},
+ {"doctype": "Role", "name": "Fleet Manager", "role_name": "Fleet Manager", "desk_access": 1},
+ {"doctype": "Role", "name": "Driver", "role_name": "Driver", "desk_access": 0},
+ {"doctype": "Role", "name": "Client Portal User", "role_name": "Client Portal User", "desk_access": 0}
+]

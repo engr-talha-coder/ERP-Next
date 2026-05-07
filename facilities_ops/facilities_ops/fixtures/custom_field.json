@@ -1,0 +1,108 @@
+[
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-default_client_site",
+  "dt": "Employee",
+  "fieldname": "default_client_site",
+  "label": "Default Client Site",
+  "fieldtype": "Link",
+  "options": "Client Site",
+  "module": "Facilities Ops",
+  "insert_after": "department"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-service_role",
+  "dt": "Employee",
+  "fieldname": "service_role",
+  "label": "Service Role",
+  "fieldtype": "Select",
+  "options": "\nCleaner\nSecurity Guard\nSupervisor\nMaintenance Tech\nDriver\nCatering Staff\nOther",
+  "module": "Facilities Ops",
+  "insert_after": "default_client_site"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-is_site_staff",
+  "dt": "Employee",
+  "fieldname": "is_site_staff",
+  "label": "Is Site Staff",
+  "fieldtype": "Check",
+  "module": "Facilities Ops",
+  "insert_after": "service_role"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-transport_eligible",
+  "dt": "Employee",
+  "fieldname": "transport_eligible",
+  "label": "Transport Eligible",
+  "fieldtype": "Check",
+  "module": "Facilities Ops",
+  "insert_after": "is_site_staff"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-uniform_size",
+  "dt": "Employee",
+  "fieldname": "uniform_size",
+  "label": "Uniform Size",
+  "fieldtype": "Data",
+  "module": "Facilities Ops",
+  "insert_after": "transport_eligible"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Employee-employee_category",
+  "dt": "Employee",
+  "fieldname": "employee_category",
+  "label": "Employee Category",
+  "fieldtype": "Select",
+  "options": "\nPermanent\nContract\nCasual\nPart-Time",
+  "module": "Facilities Ops",
+  "insert_after": "uniform_size"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Asset-client_site",
+  "dt": "Asset",
+  "fieldname": "client_site",
+  "label": "Client Site",
+  "fieldtype": "Link",
+  "options": "Client Site",
+  "module": "Facilities Ops",
+  "insert_after": "asset_name"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Asset-ownership_type",
+  "dt": "Asset",
+  "fieldname": "ownership_type",
+  "label": "Ownership Type",
+  "fieldtype": "Select",
+  "options": "\nOwned\nLeased\nClient-Provided\nLoaned",
+  "module": "Facilities Ops",
+  "insert_after": "client_site"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Asset-service_contract",
+  "dt": "Asset",
+  "fieldname": "service_contract",
+  "label": "Service Contract",
+  "fieldtype": "Link",
+  "options": "Service Contract",
+  "module": "Facilities Ops",
+  "insert_after": "ownership_type"
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Asset-asset_barcode",
+  "dt": "Asset",
+  "fieldname": "asset_barcode",
+  "label": "Asset Barcode",
+  "fieldtype": "Data",
+  "module": "Facilities Ops",
+  "insert_after": "service_contract"
+ }
+]
