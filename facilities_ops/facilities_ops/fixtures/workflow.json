@@ -28,6 +28,7 @@
   "workflow_state_field": "status",
   "states": [
    {"state": "Draft", "doc_status": "0", "allow_edit": "Operations Planner"},
+   {"state": "Pending Approval", "doc_status": "0", "allow_edit": "Operations Manager"},
    {"state": "Approved", "doc_status": "0", "allow_edit": "Operations Manager"},
    {"state": "In Progress", "doc_status": "1", "allow_edit": "Site Supervisor"},
    {"state": "Completed", "doc_status": "1", "allow_edit": "System Manager"},

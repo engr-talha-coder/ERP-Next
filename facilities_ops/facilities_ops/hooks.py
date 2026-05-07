@@ -27,6 +27,8 @@ fixtures = [
             ]
         ],
     },
+    {"dt": "Workflow State"},
+    {"dt": "Workflow Action Master"},
     {
         "dt": "Workflow",
         "filters": [
@@ -43,8 +45,6 @@ fixtures = [
             ]
         ],
     },
-    {"dt": "Workflow State"},
-    {"dt": "Workflow Action Master"},
     {"dt": "Custom Field", "filters": [["module", "=", "Facilities Ops"]]},
     {"dt": "Workspace", "filters": [["name", "in", ["Facilities Ops"]]]},
 ]
