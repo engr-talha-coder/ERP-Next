@@ -1,0 +1,42 @@
+2026-05-08 14:17:07 0 [Note] Starting MariaDB 10.11.14-MariaDB-0ubuntu0.24.04.1 source revision 053f9bcb5b147bf00edb99e1310bae9125b7f125 server_uid nPq3S5dAMVyihpfJ+v/uAk43ctU= as process 8870
+2026-05-08 14:17:07 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2026-05-08 14:17:07 0 [Note] InnoDB: Number of transaction pools: 1
+2026-05-08 14:17:07 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2026-05-08 14:17:07 0 [Note] InnoDB: Using io_uring
+2026-05-08 14:17:07 0 [Note] InnoDB: innodb_buffer_pool_size_max=128m, innodb_buffer_pool_size=128m
+2026-05-08 14:17:07 0 [Note] InnoDB: Completed initialization of buffer pool
+2026-05-08 14:17:07 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2026-05-08 14:17:07 0 [Note] InnoDB: End of log at LSN=46980
+2026-05-08 14:17:07 0 [Note] InnoDB: 128 rollback segments are active.
+2026-05-08 14:17:07 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2026-05-08 14:17:07 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2026-05-08 14:17:07 0 [Note] InnoDB: log sequence number 46980; transaction id 14
+2026-05-08 14:17:07 0 [Note] Plugin 'FEEDBACK' is disabled.
+2026-05-08 14:17:07 0 [Note] InnoDB: Loading buffer pool(s) from /workspaces/ERP-Next/.bench/frappe-bench/mariadb-data/ib_buffer_pool
+2026-05-08 14:17:07 0 [Note] InnoDB: Buffer pool(s) load completed at 260508 14:17:07
+2026-05-08 14:17:07 0 [Note] Server socket created on IP: '127.0.0.1', port: '3306'.
+2026-05-08 14:17:07 0 [Note] mariadbd: ready for connections.
+Version: '10.11.14-MariaDB-0ubuntu0.24.04.1'  socket: '/workspaces/ERP-Next/.bench/frappe-bench/mariadb.sock'  port: 3306  Ubuntu 24.04
+2026-05-08 14:17:19 3 [Warning] Aborted connection 3 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2026-05-08 14:17:31 5 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:17:47 6 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:17:51 7 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:18:06 10 [Warning] Aborted connection 10 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2026-05-08 14:18:06 9 [Warning] Aborted connection 9 to db: '_db1e822ba8faf6de' user: '_db1e822ba8faf6de' host: 'localhost' (Got an error reading communication packets)
+2026-05-08 14:18:51 12 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:19:51 13 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:20:51 14 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:21:51 15 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:22:51 16 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:23:51 17 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:24:51 18 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:25:51 19 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:26:51 20 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:27:14 21 [Warning] Access denied for user 'root'@'localhost' (using password: YES)
+2026-05-08 14:27:45 23 [Warning] Access denied for user 'root'@'localhost' (using password: YES)
+2026-05-08 14:27:51 24 [Warning] Access denied for user '_db1e822ba8faf6de'@'localhost' (using password: YES)
+2026-05-08 14:28:09 28 [Warning] Aborted connection 28 to db: '_db1e822ba8faf6de' user: '_db1e822ba8faf6de' host: 'localhost' (Got an error reading communication packets)
+2026-05-08 14:29:32 30 [Warning] Aborted connection 30 to db: '_db1e822ba8faf6de' user: '_db1e822ba8faf6de' host: 'localhost' (Got an error reading communication packets)
+2026-05-08 14:31:00 47 [Warning] Aborted connection 47 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2026-05-08 14:37:48 64 [Warning] Aborted connection 64 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2026-05-08 14:49:46 94 [Warning] Aborted connection 94 to db: '_db1e822ba8faf6de' user: '_db1e822ba8faf6de' host: 'localhost' (Got an error reading communication packets)

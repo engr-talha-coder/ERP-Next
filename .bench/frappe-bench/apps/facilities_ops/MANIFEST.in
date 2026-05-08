@@ -1,0 +1,2 @@
+include requirements.txt
+recursive-include facilities_ops *.json *.js *.css *.html *.jinja2 *.svg *.png

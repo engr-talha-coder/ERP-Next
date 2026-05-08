@@ -1,0 +1,114 @@
+[
+ {
+  "doctype": "Workflow",
+  "name": "Service Contract Workflow",
+  "document_type": "Service Contract",
+  "workflow_name": "Service Contract Workflow",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "workflow_state_field": "status",
+  "states": [
+   {"state": "Draft", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "Active", "doc_status": "1", "allow_edit": "Operations Manager"},
+   {"state": "Expired", "doc_status": "1", "allow_edit": "System Manager"},
+   {"state": "Terminated", "doc_status": "2", "allow_edit": "System Manager"}
+  ],
+  "transitions": [
+   {"state": "Draft", "action": "Submit", "next_state": "Active", "allowed": "Operations Manager"},
+   {"state": "Active", "action": "Cancel", "next_state": "Terminated", "allowed": "Operations Manager"}
+  ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Daily Service Plan Workflow",
+  "document_type": "Daily Service Plan",
+  "workflow_name": "Daily Service Plan Workflow",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "workflow_state_field": "status",
+  "states": [
+   {"state": "Draft", "doc_status": "0", "allow_edit": "Operations Planner"},
+   {"state": "Pending Approval", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "Approved", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "In Progress", "doc_status": "1", "allow_edit": "Site Supervisor"},
+   {"state": "Completed", "doc_status": "1", "allow_edit": "System Manager"},
+   {"state": "Cancelled", "doc_status": "2", "allow_edit": "System Manager"}
+  ],
+  "transitions": [
+   {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending Approval", "allowed": "Operations Planner"},
+   {"state": "Pending Approval", "action": "Approve", "next_state": "Approved", "allowed": "Operations Manager"},
+   {"state": "Pending Approval", "action": "Reject", "next_state": "Draft", "allowed": "Operations Manager"},
+   {"state": "Approved", "action": "Submit", "next_state": "In Progress", "allowed": "Operations Manager"},
+   {"state": "In Progress", "action": "Complete", "next_state": "Completed", "allowed": "Site Supervisor"}
+  ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Service Request Workflow",
+  "document_type": "Service Request",
+  "workflow_name": "Service Request Workflow",
+  "is_active": 1,
+  "send_email_alert": 1,
+  "workflow_state_field": "status",
+  "states": [
+   {"state": "Open", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "In Progress", "doc_status": "0", "allow_edit": "Site Supervisor"},
+   {"state": "Pending Client", "doc_status": "0", "allow_edit": "Site Supervisor"},
+   {"state": "Resolved", "doc_status": "0", "allow_edit": "Site Supervisor"},
+   {"state": "Closed", "doc_status": "1", "allow_edit": "Operations Manager"},
+   {"state": "Cancelled", "doc_status": "2", "allow_edit": "Operations Manager"}
+  ],
+  "transitions": [
+   {"state": "Open", "action": "Assign", "next_state": "In Progress", "allowed": "Operations Manager"},
+   {"state": "In Progress", "action": "Pending Client", "next_state": "Pending Client", "allowed": "Site Supervisor"},
+   {"state": "Pending Client", "action": "Re-open", "next_state": "In Progress", "allowed": "Site Supervisor"},
+   {"state": "In Progress", "action": "Resolve", "next_state": "Resolved", "allowed": "Site Supervisor"},
+   {"state": "Resolved", "action": "Close", "next_state": "Closed", "allowed": "Operations Manager"}
+  ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Trip Request Workflow",
+  "document_type": "Trip Request",
+  "workflow_name": "Trip Request Workflow",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "workflow_state_field": "status",
+  "states": [
+   {"state": "Draft", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "Pending Approval", "doc_status": "0", "allow_edit": "Transport Coordinator"},
+   {"state": "Approved", "doc_status": "1", "allow_edit": "Transport Coordinator"},
+   {"state": "Rejected", "doc_status": "0", "allow_edit": "Transport Coordinator"},
+   {"state": "Completed", "doc_status": "1", "allow_edit": "System Manager"},
+   {"state": "Cancelled", "doc_status": "2", "allow_edit": "System Manager"}
+  ],
+  "transitions": [
+   {"state": "Draft", "action": "Submit", "next_state": "Pending Approval", "allowed": "Operations Manager"},
+   {"state": "Pending Approval", "action": "Approve", "next_state": "Approved", "allowed": "Transport Coordinator"},
+   {"state": "Pending Approval", "action": "Reject", "next_state": "Rejected", "allowed": "Transport Coordinator"},
+   {"state": "Approved", "action": "Complete", "next_state": "Completed", "allowed": "Transport Coordinator"}
+  ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Monthly Billing Summary Workflow",
+  "document_type": "Monthly Billing Summary",
+  "workflow_name": "Monthly Billing Summary Workflow",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "workflow_state_field": "status",
+  "states": [
+   {"state": "Draft", "doc_status": "0", "allow_edit": "Finance Manager"},
+   {"state": "Review", "doc_status": "0", "allow_edit": "Operations Manager"},
+   {"state": "Approved", "doc_status": "1", "allow_edit": "Finance Manager"},
+   {"state": "Invoiced", "doc_status": "1", "allow_edit": "Finance Manager"},
+   {"state": "Cancelled", "doc_status": "2", "allow_edit": "System Manager"}
+  ],
+  "transitions": [
+   {"state": "Draft", "action": "Submit for Review", "next_state": "Review", "allowed": "Finance Manager"},
+   {"state": "Review", "action": "Approve", "next_state": "Approved", "allowed": "Operations Manager"},
+   {"state": "Review", "action": "Reject", "next_state": "Draft", "allowed": "Operations Manager"},
+   {"state": "Approved", "action": "Submit", "next_state": "Invoiced", "allowed": "Finance Manager"}
+  ]
+ }
+]

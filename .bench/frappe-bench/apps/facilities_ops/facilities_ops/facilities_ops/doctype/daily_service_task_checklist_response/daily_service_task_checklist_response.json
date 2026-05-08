@@ -1,0 +1,68 @@
+{
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "istable": 1,
+ "field_order": [
+  "item_description",
+  "response_type",
+  "is_mandatory",
+  "response",
+  "numeric_response",
+  "photo_attachment",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "label": "Item Description",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "response_type",
+   "fieldtype": "Select",
+   "label": "Response Type",
+   "options": "Yes/No\nPass/Fail\nNumeric\nText",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "is_mandatory",
+   "fieldtype": "Check",
+   "label": "Is Mandatory",
+   "default": "1"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Select",
+   "label": "Response",
+   "options": "\nYes\nNo\nPass\nFail\nN/A",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "numeric_response",
+   "fieldtype": "Float",
+   "label": "Numeric Response"
+  },
+  {
+   "fieldname": "photo_attachment",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "Daily Service Task Checklist Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

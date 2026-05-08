@@ -1,0 +1,223 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "registration_number",
+  "make",
+  "model",
+  "year",
+  "vehicle_type",
+  "status",
+  "active",
+  "section_docs",
+  "insurance_expiry",
+  "road_tax_expiry",
+  "inspection_expiry",
+  "section_assignment",
+  "default_driver",
+  "assigned_site",
+  "section_specs",
+  "fuel_type",
+  "engine_capacity",
+  "seating_capacity",
+  "payload_capacity",
+  "odometer_reading",
+  "section_service",
+  "last_service_date",
+  "next_service_date",
+  "service_interval_km"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FV-.YYYY.-.#####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "label": "Vehicle Type",
+   "options": "\nSedan\nSUV\nPickup\nMinibus\nBus\nTruck\nVan\nMotorcycle",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nIn Use\nUnder Maintenance\nOut of Service",
+   "default": "Available",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_docs",
+   "fieldtype": "Section Break",
+   "label": "Documents & Expiry"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance Expiry"
+  },
+  {
+   "fieldname": "road_tax_expiry",
+   "fieldtype": "Date",
+   "label": "Road Tax Expiry"
+  },
+  {
+   "fieldname": "inspection_expiry",
+   "fieldtype": "Date",
+   "label": "Inspection Expiry"
+  },
+  {
+   "fieldname": "section_assignment",
+   "fieldtype": "Section Break",
+   "label": "Assignment"
+  },
+  {
+   "fieldname": "default_driver",
+   "fieldtype": "Link",
+   "label": "Default Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "assigned_site",
+   "fieldtype": "Link",
+   "label": "Assigned Site",
+   "options": "Client Site"
+  },
+  {
+   "fieldname": "section_specs",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "\nPetrol\nDiesel\nElectric\nHybrid\nLPG"
+  },
+  {
+   "fieldname": "engine_capacity",
+   "fieldtype": "Data",
+   "label": "Engine Capacity"
+  },
+  {
+   "fieldname": "seating_capacity",
+   "fieldtype": "Int",
+   "label": "Seating Capacity"
+  },
+  {
+   "fieldname": "payload_capacity",
+   "fieldtype": "Float",
+   "label": "Payload Capacity (kg)"
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Float",
+   "label": "Current Odometer (km)"
+  },
+  {
+   "fieldname": "section_service",
+   "fieldtype": "Section Break",
+   "label": "Service Schedule"
+  },
+  {
+   "fieldname": "last_service_date",
+   "fieldtype": "Date",
+   "label": "Last Service Date"
+  },
+  {
+   "fieldname": "next_service_date",
+   "fieldtype": "Date",
+   "label": "Next Service Date"
+  },
+  {
+   "fieldname": "service_interval_km",
+   "fieldtype": "Float",
+   "label": "Service Interval (km)"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "Fleet Vehicle",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "role": "Transport Coordinator"
+  },
+  {
+   "read": 1,
+   "role": "Driver"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "title_field": "registration_number"
+}

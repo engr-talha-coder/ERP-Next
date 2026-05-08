@@ -1,0 +1,195 @@
+[
+ {
+  "doctype": "Workspace",
+  "name": "Facilities Ops",
+  "label": "Facilities Ops",
+  "module": "Facilities Ops",
+  "category": "Modules",
+  "icon": "building",
+  "is_hidden": 0,
+  "content": "[{\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Facilities Ops\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Operations\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Fleet\",\"col\":4}}]",
+  "links": [
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Client Site",
+    "link_count": 0,
+    "link_to": "Client Site",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Service Type",
+    "link_count": 0,
+    "link_to": "Service Type",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Shift Template",
+    "link_count": 0,
+    "link_to": "Shift Template",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Service Checklist Template",
+    "link_count": 0,
+    "link_to": "Service Checklist Template",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Billing Rule",
+    "link_count": 0,
+    "link_to": "Billing Rule",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "SLA Matrix",
+    "link_count": 0,
+    "link_to": "SLA Matrix",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Service Contract",
+    "link_count": 0,
+    "link_to": "Service Contract",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Daily Service Plan",
+    "link_count": 0,
+    "link_to": "Daily Service Plan",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Daily Service Task",
+    "link_count": 0,
+    "link_to": "Daily Service Task",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Service Request",
+    "link_count": 0,
+    "link_to": "Service Request",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Client Signoff",
+    "link_count": 0,
+    "link_to": "Client Signoff",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Consumable Consumption Slip",
+    "link_count": 0,
+    "link_to": "Consumable Consumption Slip",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Fleet Vehicle",
+    "link_count": 0,
+    "link_to": "Fleet Vehicle",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Driver",
+    "link_count": 0,
+    "link_to": "Driver",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Trip Request",
+    "link_count": 0,
+    "link_to": "Trip Request",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Trip Sheet",
+    "link_count": 0,
+    "link_to": "Trip Sheet",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Fuel Log",
+    "link_count": 0,
+    "link_to": "Fuel Log",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Monthly Billing Summary",
+    "link_count": 0,
+    "link_to": "Monthly Billing Summary",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   }
+  ],
+  "title": "Facilities Ops"
+ }
+]

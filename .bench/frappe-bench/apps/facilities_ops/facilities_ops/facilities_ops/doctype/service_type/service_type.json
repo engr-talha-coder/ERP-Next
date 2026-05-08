@@ -1,0 +1,124 @@
+{
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_type_name",
+  "service_category",
+  "description",
+  "is_active",
+  "section_billing",
+  "default_billing_rate",
+  "billing_uom",
+  "section_sla",
+  "default_response_hours",
+  "default_resolution_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_type_name",
+   "fieldtype": "Data",
+   "label": "Service Type Name",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "service_category",
+   "fieldtype": "Select",
+   "label": "Service Category",
+   "options": "\nCleaning\nSecurity\nMaintenance\nLandscaping\nPest Control\nCatering\nTransport\nOther",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_billing",
+   "fieldtype": "Section Break",
+   "label": "Billing Defaults"
+  },
+  {
+   "fieldname": "default_billing_rate",
+   "fieldtype": "Currency",
+   "label": "Default Billing Rate"
+  },
+  {
+   "fieldname": "billing_uom",
+   "fieldtype": "Link",
+   "label": "Billing UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_sla",
+   "fieldtype": "Section Break",
+   "label": "SLA Defaults"
+  },
+  {
+   "fieldname": "default_response_hours",
+   "fieldtype": "Float",
+   "label": "Default Response Hours",
+   "default": "4"
+  },
+  {
+   "fieldname": "default_resolution_hours",
+   "fieldtype": "Float",
+   "label": "Default Resolution Hours",
+   "default": "24"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "Service Type",
+ "autoname": "field:service_type_name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operations Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Operations Planner"
+  },
+  {
+   "read": 1,
+   "role": "Site Supervisor"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

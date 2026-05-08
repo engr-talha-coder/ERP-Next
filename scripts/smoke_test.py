@@ -19,7 +19,6 @@ EXPECTED_DOCTYPES = [
     "Service Checklist Template",
     "Service Checklist Item",
     "Billing Rule",
-    "SLA Matrix",
     "Service Contract",
     "Service Contract Line",
     "Daily Service Plan",

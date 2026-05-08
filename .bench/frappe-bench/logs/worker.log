@@ -1,0 +1,55 @@
+2026-05-08 14:13:49,724 Worker rq:worker:8938890168a04b02abd7e9301d5a0039 started with PID 6176, version 1.15.1
+2026-05-08 14:13:49,724 Subscribing to channel rq:pubsub:8938890168a04b02abd7e9301d5a0039
+2026-05-08 14:13:49,725 *** Listening on workspaces-ERP-Next-.bench-frappe-bench:short, workspaces-ERP-Next-.bench-frappe-bench:default, workspaces-ERP-Next-.bench-frappe-bench:long...
+2026-05-08 14:13:49,726 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:short
+2026-05-08 14:13:49,773 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:default
+2026-05-08 14:13:49,775 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:long
+2026-05-08 14:29:30,694 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Order-tax_id-hidden'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::a3bf6be5-2443-4e11-afb3-d0120252fbdf)
+2026-05-08 14:29:30,745 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::a3bf6be5-2443-4e11-afb3-d0120252fbdf)
+2026-05-08 14:29:30,746 Result is kept for 600 seconds
+2026-05-08 14:29:30,753 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Order-tax_id-print_hide'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::6069a008-761a-44a3-bdde-b1ad543ec40b)
+2026-05-08 14:29:30,809 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::6069a008-761a-44a3-bdde-b1ad543ec40b)
+2026-05-08 14:29:30,809 Result is kept for 600 seconds
+2026-05-08 14:29:30,818 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice-tax_id-hidden'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::cb9ae1bf-8c89-4a2a-b825-ba3c3870debf)
+2026-05-08 14:29:30,906 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::cb9ae1bf-8c89-4a2a-b825-ba3c3870debf)
+2026-05-08 14:29:30,906 Result is kept for 600 seconds
+2026-05-08 14:29:30,926 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice-tax_id-print_hide'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::8fbf6af6-e47d-462f-9f06-728155880a82)
+2026-05-08 14:29:30,979 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::8fbf6af6-e47d-462f-9f06-728155880a82)
+2026-05-08 14:29:30,979 Result is kept for 600 seconds
+2026-05-08 14:29:30,985 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Delivery Note-tax_id-hidden'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::bed7f4fa-0dc6-49c1-8bba-7123189c3d98)
+2026-05-08 14:29:31,035 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::bed7f4fa-0dc6-49c1-8bba-7123189c3d98)
+2026-05-08 14:29:31,035 Result is kept for 600 seconds
+2026-05-08 14:29:31,042 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Delivery Note-tax_id-print_hide'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::73b70a30-193f-48f1-bfb1-cea2a08e299e)
+2026-05-08 14:29:31,087 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::73b70a30-193f-48f1-bfb1-cea2a08e299e)
+2026-05-08 14:29:31,087 Result is kept for 600 seconds
+2026-05-08 14:29:31,093 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Packed Item-rate-read_only'}, method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::fa378750-f65f-4a31-bcc7-b069ce4998a1)
+2026-05-08 14:29:31,145 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::fa378750-f65f-4a31-bcc7-b069ce4998a1)
+2026-05-08 14:29:31,145 Result is kept for 600 seconds
+2026-05-08 14:29:31,151 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice Item-discount_account..., method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::00a1e93b-ee40-4312-b47f-9cccb05bf070)
+2026-05-08 14:29:31,194 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::00a1e93b-ee40-4312-b47f-9cccb05bf070)
+2026-05-08 14:29:31,194 Result is kept for 600 seconds
+2026-05-08 14:29:31,200 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice Item-discount_account..., method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::8e5818fa-9df6-4a61-8703-ad6876ee33b2)
+2026-05-08 14:29:31,244 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::8e5818fa-9df6-4a61-8703-ad6876ee33b2)
+2026-05-08 14:29:31,244 Result is kept for 600 seconds
+2026-05-08 14:29:31,250 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice-additional_discount_a..., method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::97b291d0-7eaa-4343-90a4-91d8ae9b8f7c)
+2026-05-08 14:29:31,298 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::97b291d0-7eaa-4343-90a4-91d8ae9b8f7c)
+2026-05-08 14:29:31,298 Result is kept for 600 seconds
+2026-05-08 14:29:31,304 workspaces-ERP-Next-.bench-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Property Setter', 'name': 'Sales Invoice-additional_discount_a..., method='frappe.model.delete_doc.delete_dynamic_links', site='facilities.local', user='Administrator') (facilities.local::9fe03aad-a3ef-4ff3-8e9a-a1a29f6992ed)
+2026-05-08 14:29:31,353 workspaces-ERP-Next-.bench-frappe-bench:default: Job OK (facilities.local::9fe03aad-a3ef-4ff3-8e9a-a1a29f6992ed)
+2026-05-08 14:29:31,353 Result is kept for 600 seconds
+2026-05-08 14:31:07,528 workspaces-ERP-Next-.bench-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.build_index_for_all_routes', kwargs={}, method=<function build_index_for_all_routes at 0x7b5c9d5758a0>, site='facilities.local', user='Administrator') (facilities.local::7bb63e21-0f1b-41a2-a311-f909a1aa28a0)
+2026-05-08 14:37:52,630 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:short
+2026-05-08 14:37:52,632 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:default
+2026-05-08 14:37:52,633 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:long
+2026-05-08 14:37:55,477 workspaces-ERP-Next-.bench-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.build_index_for_all_routes', kwargs={}, method=<function build_index_for_all_routes at 0x729210e058a0>, site='facilities.local', user='Administrator') (facilities.local::ff1788f3-212e-4a26-a550-7e252e73fabc)
+2026-05-08 14:51:25,221 Worker 8938890168a04b02abd7e9301d5a0039 [PID 6176]: warm shut down requested
+2026-05-08 14:51:25,225 Unsubscribing from channel rq:pubsub:8938890168a04b02abd7e9301d5a0039
+2026-05-08 14:51:48,069 Worker rq:worker:b9648334031f45d5b41d62abac76a37d started with PID 31867, version 1.15.1
+2026-05-08 14:51:48,069 Subscribing to channel rq:pubsub:b9648334031f45d5b41d62abac76a37d
+2026-05-08 14:51:48,070 *** Listening on workspaces-ERP-Next-.bench-frappe-bench:short, workspaces-ERP-Next-.bench-frappe-bench:default, workspaces-ERP-Next-.bench-frappe-bench:long...
+2026-05-08 15:05:18,265 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:short
+2026-05-08 15:05:18,267 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:default
+2026-05-08 15:05:18,268 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:long
+2026-05-08 15:32:18,422 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:short
+2026-05-08 15:32:18,423 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:default
+2026-05-08 15:32:18,424 Cleaning registries for queue: workspaces-ERP-Next-.bench-frappe-bench:long

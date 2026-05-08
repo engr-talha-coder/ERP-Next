@@ -1,0 +1,129 @@
+{
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "matrix_name",
+  "service_type",
+  "priority",
+  "is_active",
+  "section_times",
+  "response_time_hours",
+  "resolution_time_hours",
+  "escalation_time_hours",
+  "section_escalation",
+  "escalation_to",
+  "escalation_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "matrix_name",
+   "fieldtype": "Data",
+   "label": "Matrix Name",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": "Service Type",
+   "options": "Service Type",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh\nCritical",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_times",
+   "fieldtype": "Section Break",
+   "label": "Time Targets"
+  },
+  {
+   "fieldname": "response_time_hours",
+   "fieldtype": "Float",
+   "label": "Response Time (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resolution_time_hours",
+   "fieldtype": "Float",
+   "label": "Resolution Time (Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "escalation_time_hours",
+   "fieldtype": "Float",
+   "label": "Escalation Time (Hours)"
+  },
+  {
+   "fieldname": "section_escalation",
+   "fieldtype": "Section Break",
+   "label": "Escalation"
+  },
+  {
+   "fieldname": "escalation_to",
+   "fieldtype": "Link",
+   "label": "Escalation To",
+   "options": "User"
+  },
+  {
+   "fieldname": "escalation_email",
+   "fieldtype": "Data",
+   "label": "Escalation Email",
+   "options": "Email"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facilities Ops",
+ "name": "SLA Matrix",
+ "autoname": "field:matrix_name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operations Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Operations Planner"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
